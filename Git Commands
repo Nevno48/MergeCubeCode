@@ -1,0 +1,39 @@
+How to use git
+
+Name of Repository: Nevno48/MergeCubeCode
+
+Download git from the website, get the bash, not the graphics.
+Go to codecademy, under bash use the tutorial
+There are multiple window that are opened. There is the text editor and the command line. 
+The process that the file undergoes before it is put on git’s database(repository) is a s follows:
+Working Directory/computer(holds files) → staging area → repository
+Commands
+
+-git init (repository): this is used to make a new Git repository
+-git status: this shows the contents of the staging area(files that are worked on, but not added to the repository) and the working directory
+-git add (filename): adds the file to the staging area
+-git diff (filename): shows the changelog of differences made of the file
+-git commit (filename): puts the file from the staging area to the repository
+-git log: shows all the list of commits; press q to get out of log text
+
+-git checkout HEAD (filename): discards changes in the working directory
+-git reset HEAD (filename): unstages file from the staging area
+-git commit log: shows the log of commits to files
+-git reset commit (first 7 digits of code attached to commit change): this commits to a previous version of the file.
+
+Branching: allows different versions of a project to be saved
+
+-git branch: lists all the branches
+-git branch (name of branch): creates a new branch
+-git checkout (branch name): switches branch to new branch called branch name
+-git merge (branch name): adds files from the branch branch name to the branch you are on
+-git branch -d (branch name): deletes branch called branch name
+
+Communicating using Git remotes
+
+-git clone (remote location/name) (clone file name): clones remote location into working directory called clone file name
+-git remote -v: lists all remotes in folder name in working directory
+-git fetch (file name): fetches file filename from remote into working directory
+-git merge (origin)/(master): merges origin with master remote
+-git push (remote name) (your branch name): puts your branch into the remote’s branch 
+
